@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimpleRentCalculator</string>
+    <string name="button_add">+</string>
+    <string name="button_sub">-</string>
+    <string name="button_next">NEXT</string>
+    <string name="count">1</string>
+
+    <string name="currency_prompt">Choose a Currency</string>
+    <string name="rentMoney">Rent Money</string>
+    <string name="curr">Currency</string>
+
+    <string-array name="currency_arrays">
+        <item>Dollars</item>
+        <item>Pounds</item>
+        <item>Euros</item>
+    </string-array>
+</resources>

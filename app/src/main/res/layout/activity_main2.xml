@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uottawa.engineering.simplerentcalculator.Main2Activity">
+
+    <TextView
+        android:id="@+id/jumbo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter the following:"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomWidget" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="454dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="57dp">
+
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="@string/curr"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/currency_arrays"
+            android:padding="10dp"
+            android:prompt="@string/currency_prompt"
+            android:textSize="26sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="@string/rentMoney"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/editText2"
+
+            android:hint="Rent Money Value"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomWidget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0BF00"
+            android:text="back"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#002fff"
+            android:text="settings"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0BF00"
+            android:text="@string/button_next"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
