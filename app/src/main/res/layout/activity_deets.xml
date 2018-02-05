@@ -21,6 +21,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="83dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Since the Master bedroom has 400 sq. ft., which corresponds to 57.14% of the bedroom area, the rent is $1,142.80."
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In addition, since the Secondary bedroom has 300 sq. ft., 42.86% of the bedroom area, the rent is $857.20."
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/bottomWidget"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
