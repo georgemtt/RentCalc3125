@@ -6,12 +6,27 @@
     <string name="count">1</string>
 
     <string name="currency_prompt">Choose a Currency</string>
-    <string name="rentMoney">Rent Money</string>
-    <string name="curr">Currency</string>
+    <string name="rentMoney">Rent Money:</string>
+    <string name="curr">Currency:</string>
+    <string name="rent_prompt">Insert Rent Money</string>
+    <string name="buttonEqualSplit">Split Rent Equally</string>
+    <string name="buttonSplitSeperate">Enter Specific Room Details</string>
+    <string name="roomieName">Enter roommate name</string>
+    <string name="button_deets">More Details</string>
+    <string name="button_home">Return to Home</string>
 
     <string-array name="currency_arrays">
         <item>Dollars</item>
         <item>Pounds</item>
         <item>Euros</item>
     </string-array>
+
+    <string-array name="choice_arrays">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Master</item>
+        <item>Basement</item>
+    </string-array>
+
+
 </resources>

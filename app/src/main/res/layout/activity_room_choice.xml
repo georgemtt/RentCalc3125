@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="uottawa.engineering.simplerentcalculator.SplitSep">
+    tools:context="uottawa.engineering.simplerentcalculator.roomChoice">
 
     <TextView
         android:id="@+id/jumbo2"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="Enter room details:"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -20,4 +20,39 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="92dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ListView
+            android:id="@+id/roomtypez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomWidget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0BF00"
+            android:text="@string/button_next"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
