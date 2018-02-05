@@ -21,6 +21,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="73dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messi and Antonella should pay $1,142.80" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ronaldo should pay $857.20" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/bottomWidget"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
