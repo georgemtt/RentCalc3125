@@ -114,6 +114,35 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
         });
 
+        remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                counter--;
+
+
+
+                //roommatees newRoommate = new roommatees("Room " + counter +": ","Sam");
+
+               // roommatees newRoommate = new roommatees("Room " + counter +": ",mateList[counter]);
+
+
+                roomListt.remove(counter);
+
+                // notify listview of data changed
+                adapter.notifyDataSetChanged();
+            }
+
+
+
+
+
+
+
+        });
+
+
+
 //        for(int i = 0; i < N; i++) {
 //            // create a new textview
 //            final EditText rowTextView = new EditText(this);
@@ -157,18 +186,18 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 //
 //        }
 
-        if (v == remove){
-            if (counter == 0)
-            {
-                Toast.makeText(getApplicationContext(),"You cannot have less than 0 roommates", Toast.LENGTH_SHORT).show();
-                //Set toast saying "You have to have at least one roommate"
-            }
-            else
-            {
-                    counter--;
-            }
-           // rCount.setText(Integer.toString(counter));
-        }
+//        if (v == remove){
+//            if (counter == 0)
+//            {
+//                Toast.makeText(getApplicationContext(),"You cannot have less than 0 roommates", Toast.LENGTH_SHORT).show();
+//                //Set toast saying "You have to have at least one roommate"
+//            }
+//            else
+//            {
+//                    counter--;
+//            }
+//           // rCount.setText(Integer.toString(counter));
+//        }
 
         if (v == next){
 //            counter = 0;
